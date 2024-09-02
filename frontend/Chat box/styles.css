@@ -1,0 +1,160 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+/* General Styles */
+.container-fluid,
+.history-container,
+.chat-box,
+.clear-history-btn,
+.search-bar {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar {
+  width: 100%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right {
+  margin-right: 700px;
+  margin-top: 10px;
+}
+.left {
+  margin-left: 100px;
+}
+button {
+  color: #050605;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 15px;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Fixed Size Chat Box */
+.chat-box {
+  background-color: #f8f9fa;
+  height: 600px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 15px;
+}
+
+/* User Icon */
+.chat-message .user-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+}
+
+/* Chat Message */
+.chat-message .message {
+  max-width: 60%;
+  word-wrap: break-word;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #e9ecef;
+}
+
+/* History Container */
+.history-container {
+  flex-grow: 1;
+  display: flex;
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-bottom: 15px;
+  flex-direction: column;
+  overflow: hidden;
+  height: 400px; /* Set a fixed height for the history container */
+}
+
+.history-content {
+  flex-grow: 1;
+  padding-right: 15px; 
+  overflow-y: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 100%; /* Ensure content takes full height of container */
+}
+
+/* Clear History Button */
+.clear-history-container {
+  position: sticky;
+  bottom: 0;
+  background-color: inherit; /* Keeps the background consistent */
+  padding-top: 10px;
+}
+
+/* History Items */
+.content {
+  margin: 5px 0;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly more shadow on hover */
+}
+
+.clear-history-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar */
+.search-bar-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-bar {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.input-group .form-control {
+  border-radius: 30px 0 0 30px;
+  height: 50px;
+}
+
+.input-group .btn {
+  border-radius: 0 30px 30px 0;
+  height: 50px;
+}
